@@ -1,0 +1,55 @@
+*,
+::before,
+::after
+{
+    box-sizing: 
+    border-box;
+}
+body {
+    margin: 0;
+    font-family:'Lobster', cursive;
+}
+img {
+    width: 50%;
+    height: 100%;
+}
+h1,
+h2,
+h3
+{
+    margin: 0;
+}
+.header{
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    color: grey;
+}
+.header_logo{
+    color: inherit;
+    text-decoration: none;
+}
+.hero{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    max-width: 1230px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.hero_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 
+    minimax(290px, ifr));
+    grid-gap:20px;
+}
+.hero_about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
